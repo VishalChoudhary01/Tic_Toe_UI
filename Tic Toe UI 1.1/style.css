@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1600px;
+  min-width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* top Section start */
+#uppperSection {
+  width: 100%;
+  height: 150px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* top Section Items start */
+
+#PlayersProfile {
+  width: 300px;
+  height: 120px;
+  border: 2px solid green;
+  /* aligning profile detail */
+}
+#gameName {
+  font-size: 2rem;
+}
+#Match {
+  width: 200px;
+  height: 50px;
+  border: 1px solid rgb(225, 28, 61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* player profile start */
+
+.player {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px dotted green; */
+}
+.name {
+  /* border: 2px solid red; */
+}
+.WinLoss {
+  /* border: 3px solid rgb(47, 14, 212); */
+  margin-left: 5px;
+}
+
+/* top Section Items end */
+
+/* top Section end */
+
+#bottomSection {
+  margin-top: 10px;
+  width: 50%;
+  height: 70vh;
+  min-width: 500px;
+  min-height: 560px;
+  border: 2px double red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board {
+  max-width: 80%;
+  min-width: 80%;
+  width: 80%;
+  height: 80%;
+  border: 2px dotted green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box {
+  border: 2px solid rgb(44, 44, 44);
+  display: grid;
+  place-items: center;
+}

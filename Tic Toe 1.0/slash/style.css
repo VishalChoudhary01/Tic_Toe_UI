@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slash {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid red;
+}
+
+.slash:nth-child(1) {
+  transform: rotate(45deg);
+}
+.slash:nth-child(2) {
+  transform: rotate(-45deg);
+}
+

@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background: #1f1f1f;
+
+}
+.container {
+  width: 800px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 15px;
+  /* border: 8px solid black; */
+  box-shadow: -1px -1px 5px 2px #585656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outterCircle {
+  width: 0;
+  height: 0;
+  background: #1f1f1f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid #1f1f1f;
+  transition: all 0.1s ease-out;
+}
+.activeCircle {
+  width: 110px;
+  height: 120px;
+  border-color: rgb(14, 144, 4);
+  box-shadow: 1px 1px 5px 2px rgb(184, 181, 181);
+}
+
+/* Cross */
+
+.slash {
+  width: 0px;
+  height: 0px;
+  background: #1f1f1f;
+  transition: all 0.3s ease-in;
+}
+.slash:nth-child(1){
+    position: relative;
+    top: 15px;
+    transform: rotate(-45deg);
+}
+.slash:nth-child(2){
+    transform: rotate(45deg);
+}
+.activeCross{
+    width: 150px;
+    height: 20px;
+    background: #f70202;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 2px rgb(184, 181, 181);
+}
+
+
